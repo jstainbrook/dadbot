@@ -100,7 +100,7 @@ client.on("message", (message) => {
   if (command === 'isitdoneyet') {
     var quotes = new Array("MAMA'S COOKING GO AWAY!","NO, Dammit!", "Yes.  Nailed it.", "OMG, WHY????", "No, but I GOT THIS, I'm an ENGINEER!","Here, hold my beer and watch this!");
     var randno = quotes[Math.floor( Math.random() * quotes.length )];      
-    message.channel.send(randno);
+    message.channel.send(randno, {files: ["https://media.tenor.com/images/2095174a8a8e0d1f431cd13c48e3387e/tenor.gif"] });
   }  
 }); 
 //Your secret token to log the bot in. (never show this to anyone!)
