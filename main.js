@@ -15,7 +15,6 @@ funtions:
 
  **/
  
- 
 //Requiring Packages
 const discord = require('discord.js'); //This can also be discord.js-commando or other node based packages!
 
