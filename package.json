@@ -1,0 +1,19 @@
+{
+    "name": "dadbot",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Julie Stainbrook <jstainbrook@hyperjoule.io>",
+    "contributors": [],
+    "dependencies": {
+        "discord.js": "^11.5.1",
+        "get-json": "^1.0.1",
+        "give-me-a-joke": "^0.1.2",
+        "xmlhttprequest": "^1.8.0"
+    }
+}
