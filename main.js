@@ -98,7 +98,7 @@ client.on("message", (message) => {
     });
   }  
   if (command === 'isitdoneyet') {
-    var quotes = new Array("MAMA'S COOKING GO AWAY!","NO, Dammit!", "Yes.  Nailed it.", "OMG, WHY????", "No, but I GOT THIS, I'm an ENGINEER!");
+    var quotes = new Array("MAMA'S COOKING GO AWAY!","NO, Dammit!", "Yes.  Nailed it.", "OMG, WHY????", "No, but I GOT THIS, I'm an ENGINEER!","Here, hold my beer and watch this!");
     var randno = quotes[Math.floor( Math.random() * quotes.length )];      
     message.channel.send(randno);
   }  
