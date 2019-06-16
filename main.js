@@ -10,8 +10,6 @@ funtions:
 !dadjoke - get a random dad joke
 !chucknorris - get a random chuck norris joke
 !isitdoneyet - the answer is NO
-!toddles - you deserve this
-!moosey - you too
 
  **/
  
@@ -75,28 +73,6 @@ client.on("message", (message) => {
       //=> console.log(joke);
     });
   }
-  if (command === 'toddles') {
-    var memtag = 'obsidianspider#3590';
-    var fn = "Obsidian";
-    var ln = "Spider";
-    message.react("🤔");
-    giveMeAJoke.getCustomJoke (fn, ln, function(joke) {
-      joke = joke.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
-      joke = joke.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');        
-      message.channel.send(joke.replace("'ss","'s"));
-    });
-  }
-  if (command === 'moosey') {
-    var memtag = '@moosepr#2629';
-    var fn = "Mr";
-    var ln = "Mooseman";
-    message.react("🤔");
-    joke = joke.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
-    joke = joke.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');    
-    giveMeAJoke.getCustomJoke (fn, ln, function(joke) {
-      message.channel.send(joke.replace("'ss","'s"));
-    });
-  }  
   if (command === 'isitdoneyet') {
     var quotes = new Array("MAMA'S COOKING GO AWAY!","NO, Dammit!", "Yes.  Nailed it.", "OMG, WHY????", "No, but I GOT THIS, I'm an ENGINEER!","Here, hold my beer and watch this!");
     var randno = quotes[Math.floor( Math.random() * quotes.length )];      
