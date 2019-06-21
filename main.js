@@ -5,11 +5,13 @@
 
 dadbot code
 
-funtions:
+functions:
 
 !dadjoke - get a random dad joke
 !chucknorris - get a random chuck norris joke
 !isitdoneyet - the answer is NO
+!twss - that's what SHE said!
+!phrasing - BOOM
 
  **/
  
@@ -77,7 +79,29 @@ client.on("message", (message) => {
     var quotes = new Array("MAMA'S COOKING GO AWAY!","NO, Dammit!", "Yes.  Nailed it.", "OMG, WHY????", "No, but I GOT THIS, I'm an ENGINEER!","Here, hold my beer and watch this!");
     var randno = quotes[Math.floor( Math.random() * quotes.length )];      
     message.channel.send(randno, {files: ["https://media.tenor.com/images/2095174a8a8e0d1f431cd13c48e3387e/tenor.gif"] });
-  }  
+  }
+  if (command === 'phrasing') {
+        var boom = new Array("https://media.tenor.com/images/67ecccbfed3037cb59dc92e3a8acccd3/tenor.gif",
+                "https://media.tenor.com/images/d6a85001956f2916ca4a4daaae1da4df/tenor.gif",
+                "https://media.tenor.com/images/b2f8ba0a3c39929d9373ad572ba6adc2/tenor.gif",
+                "https://media.tenor.com/images/78138218056388e778677ceda9541d75/tenor.gif"
+                ,
+                "https://media.tenor.com/images/6eac1628986e54db733d73974969714f/tenor.gif"
+                );
+        var randno = boom[Math.floor(Math.random() * boom.length)];
+        message.channel.send("boom.", {files: [randno]});
+   }
+   if (command === 'twss') {
+        var boom = new Array("https://media.tenor.com/images/f548bddc4e22d7a12cbbbe8fd988ad3d/tenor.gif",
+                "https://media.tenor.com/images/5e16e6d7bb336cf48191ea1d84c73f18/tenor.gif",
+                "https://media.tenor.com/images/7688ae3d08d0673cf6f658c68fe4bda9/tenor.gif",
+                "https://media.tenor.com/images/8876d9742a3a27a5fc809d8c9807b0a8/tenor.gif"
+                ,
+                "https://media.tenor.com/images/9dcff9bb953e932f292008fdcad434d7/tenor.gif"
+                );
+        var randno = boom[Math.floor(Math.random() * boom.length)];
+        message.channel.send("That's what SHE said!", {files: [randno]});
+    }   
 }); 
 //Your secret token to log the bot in. (never show this to anyone!)
 client.login(config.token);
