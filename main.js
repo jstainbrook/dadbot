@@ -16,7 +16,7 @@ functions:
  **/
 
 // Requiring Packages
-const discord = require('discord.js'); // This can also be discord.js-commando or other node based packages!
+const discord = require('discord.js');
 
 // Create the bot client
 const client = new discord.Client();
@@ -42,7 +42,7 @@ client.on('message', (message) => {
 	// This reads the first part of your message behind your prefix to see which command you want to use.
 	const command = message.content.toLowerCase().slice(settings.prefix.length).split(' ')[0];
 	// These are the arguments behind the commands.
-	let args = message.content.split(' ').slice(1);
+	// const args = message.content.split(' ').slice(1);
 
 	// If the user that types a message is a bot account return.
 	if (message.author.bot) return;
